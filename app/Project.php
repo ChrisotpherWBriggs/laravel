@@ -15,15 +15,15 @@ class Project extends Model
     	'days',
     ];
 
-    public_function user(){
+    public function user(){
         return $this->belongsTo('App\User');
     }
 
-    public_function company(){
+    public function company(){
         return $this->belongsTo('App\Company');
     }
 
-    public_function users(){
+    public function users(){
         return $this->belongsToMany('App\User');
 
     }

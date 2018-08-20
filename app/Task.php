@@ -16,19 +16,19 @@ class Task extends Model
     	'company_id',
     ];
 
-    public_function user(){
+    public function user(){
         return $this->belongsTo('App\User');
     }
 
-    public_function project(){
+    public function project(){
         return $this->belongsTo('App\Project');
     }
 
-    public_function companies(){
+    public function companies(){
         return $this->belongsTo('App\Company');
     }
 
-    public_function users(){
+    public function users(){
 		return $this->belongsToMany('App\User');
 
     }
