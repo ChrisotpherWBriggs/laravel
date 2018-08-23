@@ -1,106 +1,88 @@
- @extends('layouts/app')
- @section('content')
- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-      </nav>
-      <a class="btn btn-outline-primary" href="#">Sign up</a>
-    </div>
+<html>
+<body>
+<style>
+.card1 {
+  background-color: #008c91;
+  color: #ffffff;
+}
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Pricing</h1>
-      <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
-    </div>
+.card2 {
+  background-color: #d46718;
+  color: #ffffff;
+}
 
-    <div class="container">
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-          </div>
-        </div>
+.card3 {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+</style>
+
+@extends('layouts.app')
+
+@section('content')
+
+<div class="wrapper" style="float:right">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <ol class="list-unstyled">
+        <li class="list-item">March 2014</li>
+      </ol>
+        ...
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+</div>
+</div>
+    
+ 
+
+<div class="row">
+<div class="jumbotron bg-primary col-md-6 col-lg-6 col-md-offset-3 col-offset-lg-3">
+    <div class="card-body">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <h3 class="card-text">{{ $company->name }}</h3>
+
       </div>
-
-      <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-          <div class="col-12 col-md">
-            <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Cool stuff</a></li>
-              <li><a class="text-muted" href="#">Random feature</a></li>
-              <li><a class="text-muted" href="#">Team feature</a></li>
-              <li><a class="text-muted" href="#">Stuff for developers</a></li>
-              <li><a class="text-muted" href="#">Another one</a></li>
-              <li><a class="text-muted" href="#">Last time</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Resource</a></li>
-              <li><a class="text-muted" href="#">Resource name</a></li>
-              <li><a class="text-muted" href="#">Another resource</a></li>
-              <li><a class="text-muted" href="#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Team</a></li>
-              <li><a class="text-muted" href="#">Locations</a></li>
-              <li><a class="text-muted" href="#">Privacy</a></li>
-              <li><a class="text-muted" href="#">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </div>
-    @endsection
+    </div>
+</div>
+</div>
+<div class="row col-md-6 col-lg-6 col-md-offset-3 col-offset-lg-3">
+
+      <p>{{ $company->description }}</p>
+</div>
+  
+
+<div class="row" style="padding-top: 20px; background-color: white; margin: 10px;">
+
+@foreach($company->projects as $project)
+  <div class="card card1 col-md-4 col-lg-4" style="padding-left: 5px;">
+    <h2 class="card-header">{{ $project->name}}</h2>
+    <p class="card-text">{{ $project->description}}</p>
+    <p><a class="btn btn-primary" href="/projects/{{ $project->id }}" role="button"> View Project >> </a></p> 
+    </div>
+  @endforeach
+    <div class="card card2 col-md-4 col-lg-4">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the third card</p>
+      </div>
+    </div>
+    <div class="card card3 col-md-4 col-lg-4">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the fourth card</p>
+      </div>
+    </div>  
+  </div>
+</div>
+
+@endsection
+
+</body>
+</html>
+
+ 
+
