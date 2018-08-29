@@ -53,29 +53,20 @@
 </div>
 <div class="row col-md-6 col-lg-6 col-md-offset-3 col-offset-lg-3">
 
-      <p>{{ $company->description }}</p>
+      <h3>{{ $company->description }}</h3>
 </div>
   
 
-<div class="row" style="padding-top: 20px; background-color: white; margin: 10px;">
+<div class="row" style="padding-top: 20px; background-color: white; margin: 10px;" align="center">
 
 @foreach($company->projects as $project)
-  <div class="card card1 col-md-4 col-lg-4" style="padding-left: 5px;">
+  <div class="card card1 col-md-4 col-lg-4 col-md-offset-1 " style="padding-left: 5px;">
     <h2 class="card-header">{{ $project->name}}</h2>
     <p class="card-text">{{ $project->description}}</p>
     <p><a class="btn btn-primary" href="/projects/{{ $project->id }}" role="button"> View Project >> </a></p> 
     </div>
   @endforeach
-    <div class="card card2 col-md-4 col-lg-4">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the third card</p>
-      </div>
-    </div>
-    <div class="card card3 col-md-4 col-lg-4">
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the fourth card</p>
-      </div>
-    </div>  
+      
   </div>
 </div>
 
